@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Marcellus&family=Jost:wght@300;400;500&family=Frank+Ruhl+Libre:wght@500;700&display=swap">
+  <style>
+    * { box-sizing: border-box; }
+    .wc { font-family: 'Jost', system-ui, sans-serif; color: #e9e3d5; }
+    .mar { font-family: 'Marcellus', Georgia, serif; }
+    .heb { font-family: 'Frank Ruhl Libre', serif; }
+    a { color: #d9b978; text-decoration: none; } a:hover { color: #ecd39a; }
+  </style>
+</helmet>
+
+<div class="wc" style="width: 1200px; background: #0d1424; color: #e9e3d5; overflow: hidden;">
+
+  <!-- Header -->
+  <div style="display: flex; align-items: center; justify-content: space-between; padding: 28px 60px; border-bottom: 1px solid rgba(217,185,120,0.22);">
+    <span class="mar" style="font-size: 25px; letter-spacing: 0.06em; color: #f2ead9;">Shaaré Tsion</span>
+    <div style="display: flex; gap: 38px; font-size: 13px; font-weight: 400; letter-spacing: 0.16em; text-transform: uppercase; color: #b9b1a0;">
+      <span>Le Rav</span><span>Chabbat</span><span>Offices</span><span>Contact</span>
+    </div>
+  </div>
+
+  <!-- Hero with photo -->
+  <div style="position: relative; height: 620px; overflow: hidden;">
+    <img src="synagogue.jpg" alt="Intérieur de la synagogue" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.42;">
+    <div style="position: absolute; inset: 0; background: radial-gradient(120% 90% at 50% 15%, rgba(13,20,36,0.35), rgba(13,20,36,0.94) 78%);"></div>
+    <div style="position: relative; text-align: center; padding: 92px 56px 0;">
+      <div class="heb" style="font-size: 30px; color: #d9b978; letter-spacing: 0.12em; margin-bottom: 20px;">שערי ציון</div>
+      <div style="display: flex; align-items: center; justify-content: center; gap: 18px; margin-bottom: 22px;">
+        <span style="width: 60px; height: 1px; background: linear-gradient(90deg, transparent, #d9b978);"></span>
+        <span style="font-size: 12px; font-weight: 500; letter-spacing: 0.34em; text-transform: uppercase; color: #d9b978;">Neve Tzedek · Tel Aviv</span>
+        <span style="width: 60px; height: 1px; background: linear-gradient(90deg, #d9b978, transparent);"></span>
+      </div>
+      <h1 class="mar" style="font-size: 104px; line-height: 1; margin: 0 0 26px; color: #f4ecda; font-weight: 400; letter-spacing: 0.01em;">Shaaré Tsion</h1>
+      <p class="wc" style="font-size: 19px; font-weight: 300; color: #cfc8b8; max-width: 500px; margin: 0 auto 40px; line-height: 1.6;">Une communauté chaleureuse au cœur du quartier historique de Neve Tzedek.</p>
+      <a href="#" class="mar" style="display: inline-block; border: 1px solid #d9b978; color: #f0dcac; padding: 15px 40px; font-size: 16px; letter-spacing: 0.08em;">Horaires du Chabbat</a>
+    </div>
+  </div>
+
+  <!-- Shabbat rail -->
+  <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; text-align: center; border-top: 1px solid rgba(217,185,120,0.22);">
+    <div style="padding: 44px 30px; border-right: 1px solid rgba(217,185,120,0.16);">
+      <div style="font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: #9c957f; margin-bottom: 10px;">Parasha</div>
+      <div class="mar" style="font-size: 40px; color: #f2ead9;">Reéh</div>
+    </div>
+    <div style="padding: 44px 30px; border-right: 1px solid rgba(217,185,120,0.16);">
+      <div style="font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: #9c957f; margin-bottom: 10px;">Allumage</div>
+      <div class="mar" style="font-size: 44px; color: #d9b978;">19:12</div>
+      <div style="font-size: 13px; color: #8b8472; margin-top: 4px;">Vendredi 7 août</div>
+    </div>
+    <div style="padding: 44px 30px;">
+      <div style="font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: #9c957f; margin-bottom: 10px;">Sortie</div>
+      <div class="mar" style="font-size: 44px; color: #d9b978;">20:11</div>
+      <div style="font-size: 13px; color: #8b8472; margin-top: 4px;">Samedi 8 août</div>
+    </div>
+  </div>
+
+</div>
+</x-dc>
+<script data-dc-script data-props='{}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

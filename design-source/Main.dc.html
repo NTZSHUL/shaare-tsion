@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Karla:wght@400;500;600;700&family=Frank+Ruhl+Libre:wght@500;700&display=swap">
+  <style>
+    * { box-sizing: border-box; }
+    .wa { font-family: 'Karla', system-ui, sans-serif; color: #2a251d; }
+    .serif { font-family: 'Cormorant Garamond', Georgia, serif; }
+    .heb { font-family: 'Frank Ruhl Libre', 'Cormorant Garamond', serif; }
+    a { color: #a97b33; text-decoration: none; } a:hover { color: #855f22; }
+  </style>
+</helmet>
+
+<div class="wa" style="width: 1200px; background: #f6f1e6; color: #2a251d; overflow: hidden;">
+
+  <!-- Header -->
+  <div style="display: flex; align-items: center; justify-content: space-between; padding: 26px 56px; border-bottom: 1px solid rgba(42,37,29,0.12);">
+    <div style="display: flex; align-items: baseline; gap: 14px;">
+      <span class="serif" style="font-size: 27px; font-weight: 700; letter-spacing: 0.01em; color: #1b2a44;">Shaaré Tsion</span>
+      <span class="heb" style="font-size: 20px; color: #a97b33;">שערי ציון</span>
+    </div>
+    <div style="display: flex; gap: 34px; font-size: 14px; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; color: #55503f;">
+      <span>Le Rav</span><span>Chabbat</span><span>Offices</span><span>Contact</span>
+    </div>
+  </div>
+
+  <!-- Hero -->
+  <div style="display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 56px; padding: 70px 56px 60px; align-items: center;">
+    <div>
+      <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 26px;">
+        <span style="width: 46px; height: 1px; background: #b98f45;"></span>
+        <span style="font-size: 13px; font-weight: 700; letter-spacing: 0.22em; text-transform: uppercase; color: #a97b33;">Neve Tzedek · Tel Aviv</span>
+      </div>
+      <h1 class="serif" style="font-size: 90px; line-height: 0.98; font-weight: 600; margin: 0 0 24px; color: #1b2a44; letter-spacing: -0.01em;">Une maison<br>de prière au<br>cœur du<span style="font-style: italic; color: #a97b33;"> quartier</span>.</h1>
+      <p style="font-size: 18px; line-height: 1.65; color: #5b5545; max-width: 430px; margin: 0 0 36px;">La communauté Shaaré Tsion accueille chacun pour la prière, l'étude et la fête, dans le quartier historique de Neve Tzedek.</p>
+      <div style="display: flex; gap: 16px; align-items: center;">
+        <a href="#" style="display: inline-flex; align-items: center; gap: 10px; background: #1b2a44; color: #f6f1e6; padding: 15px 28px; border-radius: 2px; font-weight: 600; font-size: 15px; letter-spacing: 0.02em;">Horaires du Chabbat
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a href="#" style="display: inline-flex; align-items: center; padding: 15px 10px; font-weight: 600; font-size: 15px; color: #1b2a44; border-bottom: 1.5px solid #b98f45;">Nous contacter</a>
+      </div>
+    </div>
+    <!-- Arched photo -->
+    <div style="position: relative;">
+      <div style="border-radius: 240px 240px 8px 8px; overflow: hidden; border: 1px solid rgba(42,37,29,0.15); box-shadow: 0 30px 60px -30px rgba(27,42,68,0.45);">
+        <img src="synagogue.jpg" alt="Intérieur de la synagogue" style="display: block; width: 100%; height: 560px; object-fit: cover;">
+      </div>
+      <div class="heb" style="position: absolute; -webkit-writing-mode: vertical-rl; writing-mode: vertical-rl; top: 30px; right: -34px; font-size: 22px; color: #a97b33; letter-spacing: 0.1em;">זה השער לה׳</div>
+    </div>
+  </div>
+
+  <!-- Shabbat band -->
+  <div style="background: #1b2a44; color: #f6f1e6; padding: 48px 56px;">
+    <div style="display: flex; align-items: center; justify-content: space-between;">
+      <div>
+        <div style="font-size: 12px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: #d9b877;">Parasha de la semaine</div>
+        <div class="serif" style="font-size: 46px; font-weight: 600; line-height: 1;">Reéh</div>
+      </div>
+      <div style="display: flex; gap: 56px;">
+        <div style="text-align: center;">
+          <div style="font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(246,241,230,0.7);">Allumage des bougies</div>
+          <div class="serif" style="font-size: 52px; font-weight: 700; line-height: 1.1; color: #f0d9a6;">19:12</div>
+          <div style="font-size: 13px; color: rgba(246,241,230,0.6);">Vendredi 7 août</div>
+        </div>
+        <div style="width: 1px; background: rgba(246,241,230,0.2);"></div>
+        <div style="text-align: center;">
+          <div style="font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(246,241,230,0.7);">Sortie du Chabbat</div>
+          <div class="serif" style="font-size: 52px; font-weight: 700; line-height: 1.1; color: #f0d9a6;">20:11</div>
+          <div style="font-size: 13px; color: rgba(246,241,230,0.6);">Samedi 8 août</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Rav strip -->
+  <div style="display: flex; align-items: center; gap: 28px; padding: 40px 56px;">
+    <img src="rav.jpg" alt="Rav Yonathan Seror" style="width: 92px; height: 92px; border-radius: 50%; object-fit: cover; border: 2px solid #b98f45;">
+    <div>
+      <div style="font-size: 12px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: #a97b33;">Le Rav de la communauté</div>
+      <div class="serif" style="font-size: 30px; font-weight: 600; color: #1b2a44; line-height: 1.1;">Rav Yonathan Seror</div>
+      <div style="font-size: 15px; color: #5b5545;">Rabbin de Shaaré Tsion-Etz Haïm · Dayan au Beth-Din Chaaré Halakha Oumichpat</div>
+    </div>
+  </div>
+
+</div>
+</x-dc>
+<script data-dc-script data-props='{}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

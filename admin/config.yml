@@ -1,0 +1,36 @@
+# =====================================================================
+#  Décap CMS — panneau d'administration de Shaaré Tsion
+#  Permet de gérer les « Actualités » depuis un navigateur, sans code.
+#  (Activé une fois le site déployé sur Netlify — voir DEPLOY.md)
+# =====================================================================
+
+backend:
+  name: git-gateway
+  branch: main            # branche principale du dépôt (main ou master)
+
+# Où Décap dépose les images téléversées depuis le panneau :
+media_folder: "assets/images"
+public_folder: "assets/images"
+
+locale: "fr"
+
+collections:
+  - name: "actualites"
+    label: "Actualités"
+    files:
+      - name: "news"
+        label: "Annonces de la communauté"
+        file: "assets/data/news.json"
+        format: "json"
+        description: "Ajoutez, modifiez ou retirez les annonces affichées sur la page d'accueil. La plus récente en premier."
+        fields:
+          - label: "Annonces"
+            name: "news"
+            widget: "list"
+            label_singular: "Annonce"
+            summary: "{{fields.titre}}"
+            fields:
+              - { label: "Date", name: "date", widget: "string", hint: "Ex. : « Août 2026 » ou « Chaque mardi »" }
+              - { label: "Titre", name: "titre", widget: "string" }
+              - { label: "Texte", name: "texte", widget: "text" }
+              - { label: "Lien (optionnel)", name: "lien", widget: "string", required: false, default: "" }

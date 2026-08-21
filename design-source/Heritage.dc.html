@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;500;700;900&family=Assistant:wght@400;500;600;700&display=swap">
+  <style>
+    * { box-sizing: border-box; }
+    .wb { font-family: 'Assistant', system-ui, sans-serif; color: #2c281f; }
+    .fr { font-family: 'Frank Ruhl Libre', Georgia, serif; }
+    a { color: #a4552f; text-decoration: none; } a:hover { color: #7f3f21; }
+  </style>
+</helmet>
+
+<div class="wb" style="width: 1200px; background: #e9dfcb; color: #2c281f; overflow: hidden; background-image: radial-gradient(rgba(61,66,48,0.05) 1px, transparent 1px); background-size: 5px 5px;">
+
+  <!-- Header -->
+  <div style="display: flex; align-items: center; justify-content: space-between; padding: 24px 56px; border-bottom: 2px solid #3d4230;">
+    <div style="display: flex; gap: 30px; font-size: 13px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #3d4230;">
+      <span>Le Rav</span><span>Chabbat</span><span>Offices</span>
+    </div>
+    <div class="fr" style="font-size: 22px; font-weight: 700; color: #3d4230;">שערי ציון</div>
+    <div style="display: flex; gap: 30px; font-size: 13px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #3d4230;">
+      <span>Galerie</span><span>Dons</span><span>Contact</span>
+    </div>
+  </div>
+
+  <!-- Hero -->
+  <div style="text-align: center; padding: 60px 56px 20px;">
+    <div class="fr" style="font-size: 30px; color: #a4552f; margin-bottom: 6px;">שערי ציון</div>
+    <div style="font-size: 13px; font-weight: 700; letter-spacing: 0.28em; text-transform: uppercase; color: #6b6449; margin-bottom: 18px;">Fondée dans la tradition · Neve Tzedek</div>
+    <h1 class="fr" style="font-size: 92px; line-height: 0.96; font-weight: 900; margin: 0 0 14px; color: #2c281f;">Shaaré Tsion</h1>
+    <p class="fr" style="font-size: 25px; font-style: italic; color: #5a5238; max-width: 620px; margin: 0 auto 34px;">« Voici la porte de l'Éternel ; les justes y entreront. »</p>
+    <a href="#" style="display: inline-block; background: #3d4230; color: #ece3d2; padding: 15px 34px; font-weight: 700; font-size: 14px; letter-spacing: 0.06em; text-transform: uppercase;">Horaires du Chabbat</a>
+  </div>
+
+  <!-- Framed photo -->
+  <div style="padding: 24px 56px 46px;">
+    <div style="border: 2px solid #3d4230; padding: 10px; background: #ece3d2;">
+      <div style="border: 1px solid #a4552f; overflow: hidden;">
+        <img src="jardin.jpg" alt="Le jardin des réceptions" style="display: block; width: 100%; height: 300px; object-fit: cover; filter: sepia(0.28) saturate(0.9);">
+      </div>
+    </div>
+    <div class="fr" style="text-align: center; font-style: italic; font-size: 16px; color: #6b6449; margin-top: 12px;">Le jardin — nos réceptions et célébrations</div>
+  </div>
+
+  <!-- Shabbat + offices -->
+  <div style="display: grid; grid-template-columns: 1fr 1fr; border-top: 2px solid #3d4230;">
+    <div style="padding: 40px 56px; border-right: 2px solid #3d4230;">
+      <div style="font-size: 12px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #a4552f; margin-bottom: 20px;">Chabbat · Parashat Reéh</div>
+      <div style="display: flex; justify-content: space-between; align-items: baseline; padding: 10px 0; border-bottom: 1px dotted #9a9174;">
+        <span class="fr" style="font-size: 20px;">Allumage des bougies</span><span class="fr" style="font-size: 30px; font-weight: 700; color: #3d4230;">19:12</span>
+      </div>
+      <div style="display: flex; justify-content: space-between; align-items: baseline; padding: 10px 0;">
+        <span class="fr" style="font-size: 20px;">Sortie du Chabbat</span><span class="fr" style="font-size: 30px; font-weight: 700; color: #3d4230;">20:11</span>
+      </div>
+    </div>
+    <div style="padding: 40px 56px;">
+      <div style="font-size: 12px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #a4552f; margin-bottom: 20px;">Offices en semaine</div>
+      <div style="display: flex; justify-content: space-between; align-items: baseline; padding: 10px 0; border-bottom: 1px dotted #9a9174;">
+        <span class="fr" style="font-size: 20px;">Sha'harit (matin)</span><span class="fr" style="font-size: 30px; font-weight: 700; color: #3d4230;">08:15</span>
+      </div>
+      <div style="display: flex; justify-content: space-between; align-items: baseline; padding: 10px 0;">
+        <span class="fr" style="font-size: 20px;">Sha'harit · Chabbat</span><span class="fr" style="font-size: 30px; font-weight: 700; color: #3d4230;">09:00</span>
+      </div>
+    </div>
+  </div>
+
+</div>
+</x-dc>
+<script data-dc-script data-props='{}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

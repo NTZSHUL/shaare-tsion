@@ -1,0 +1,39 @@
+📷  IMAGES DU SITE — Shaaré Tsion
+=================================
+
+Déposez vos photos DANS CE DOSSIER (assets/images/), puis elles s'affichent
+automatiquement sur le site. Aucune autre manipulation.
+
+Formats acceptés : .jpg  .jpeg  .png  .webp
+Conseil : réduisez les photos à ~1600 px de large max (fichiers plus légers,
+site plus rapide).
+
+--------------------------------------------------------------------
+FICHIERS ATTENDUS (noms exacts — respectez les minuscules)
+--------------------------------------------------------------------
+
+  rav-seror.jpg     → Photo du Rav Yonathan Seror
+                      (tant qu'elle est absente, l'emblème ✡ s'affiche)
+
+  synagogue.jpg     → Photo de la synagogue (section « Notre synagogue »)
+
+  jardin.jpg        → Photo du jardin où se tiennent les événements
+
+--------------------------------------------------------------------
+GALERIE PHOTOS (autant d'images que vous voulez)
+--------------------------------------------------------------------
+
+1. Déposez vos photos ici, ex. : photo-1.jpg, photo-2.jpg, kiddouch.jpg …
+2. Ouvrez  assets/js/config.js  et listez-les dans « gallery », ex. :
+
+     gallery: [
+       { src: "assets/images/photo-1.jpg",  caption: "Kiddouch communautaire" },
+       { src: "assets/images/kiddouch.jpg", caption: "Soirée d'étude" },
+     ],
+
+La section « Galerie » (et son lien dans le menu) apparaît dès qu'il y a
+au moins une photo. Un clic sur une vignette l'ouvre en grand.
+
+--------------------------------------------------------------------
+Pour changer un nom de fichier : modifiez le chemin correspondant dans
+assets/js/config.js (rav.photo, photos.shul, photos.garden, ou gallery).

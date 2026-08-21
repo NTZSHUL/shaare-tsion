@@ -1,0 +1,13 @@
+{
+  "artboards": [
+    { "file": "Main.dc.html", "x": 0, "y": 0, "w": 1200, "h": 1180, "title": "Option A — Warm editorial" },
+    { "file": "Heritage.dc.html", "x": 1360, "y": 0, "w": 1200, "h": 1080, "title": "Option B — Heritage" },
+    { "file": "Midnight.dc.html", "x": 2720, "y": 0, "w": 1200, "h": 940, "title": "Option C — Midnight & gold" }
+  ],
+  "annotations": [
+    { "id": "opt-a", "x": 0, "y": -168, "w": 380, "text": "OPTION A · Warm editorial\nLight, boutique, refined — an elevated take on your current navy + gold + cream. Cormorant serif, arched photo framing." },
+    { "id": "opt-b", "x": 1360, "y": -168, "w": 380, "text": "OPTION B · Heritage\nTextured limestone, letterpress feel, symmetric framed layout. Frank Ruhl Libre (Hebrew + Latin), olive + terracotta. Traditional and warm." },
+    { "id": "opt-c", "x": 2720, "y": -168, "w": 380, "text": "OPTION C · Midnight & gold\nDark, luminous, reverent. Marcellus display over a dimmed photo, glowing gold rules. Dramatic and modern-luxe." }
+  ],
+  "launch": { "view": "canvas" }
+}
